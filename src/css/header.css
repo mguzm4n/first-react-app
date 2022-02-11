@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --btn-pad: 3rem;
+    --btn-pad-t: 1rem;
+}
+
+.header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: calc(100% - 12rem);
+    margin-top: 1.5rem;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.date{
+    display: flex;
+    max-width: 20%;
+    padding-left: .5rem;
+    border-bottom: 1px solid #313131;
+    margin-bottom: 2rem;
+
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.auth-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 10%;
+    gap: calc(var(--btn-pad)*2);
+    max-height: 4rem;
+
+    font-size: 1.5rem;
+}
+
+
+.auth-btn{
+    cursor: pointer;
+    border-radius: 2px;
+    padding: var(--btn-pad-t) var(--btn-pad);
+}
+
+.auth-btn:first-child{
+    position: relative;
+}
+
+.auth-btn:first-child::after{
+    content: "";
+    cursor:initial;
+    position: absolute;
+    right: calc(-1*var(--btn-pad));
+    top: calc(var(--btn-pad-t) / 2); 
+    width: 1px;
+    height: calc(var(--btn-pad-t)*3);
+    background-color: #313131;
+}

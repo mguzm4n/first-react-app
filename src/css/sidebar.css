@@ -1,0 +1,30 @@
+.sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    padding: 1.8rem;
+    background-color: #EFEFEF;
+    border-right: 1px solid #313131;
+}
+
+.menu-box {
+    cursor: pointer;
+    padding: 0.2rem;
+    border: 2px solid #C4C4C4;
+    width: 1.3rem;
+    height: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar {
+    width: 1.2rem;
+    height: 0.1rem;
+    background-color: #313131;
+    border-radius: 0.2rem;
+}
