@@ -11,6 +11,8 @@
     transition: .8s ease;
 }
 
+/* Expand on-click sidebar from left to right */
+
 .sidebar.change {
     width: 7rem;
 }
@@ -30,9 +32,22 @@
     align-items: center;
 }
 
+/*  Animate on-click menu bars */
+
 .menu-box.change {
-    animation: join-lines 0.3s ease;
+    animation: extend-lines 0.3s ease;
 }
+
+@keyframes extend-lines {
+    0% {
+        gap: 0;
+    }
+    100% {
+        gap: 0.3rem;
+    }
+}
+
+/* Create menu bars */
 
 .menu-bar {
     width: 1.2rem;
@@ -42,6 +57,7 @@
     position: relative;
 }
 
+/* Create X shape */
 
 .menu-bar.x-menu {
     position: absolute;
@@ -49,18 +65,11 @@
     border-radius: 0.2rem;
 }
 
+/* Create X shape to close Sidebar */
+
 .menu-bar.x1 {
     transform: rotate(-45deg);
 }
 .menu-bar.x2 {
     transform: rotate(45deg);
-}
-
-@keyframes join-lines {
-    0% {
-        gap: 0;
-    }
-    100% {
-        gap: 0.3rem;
-    }
 }
